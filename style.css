@@ -123,12 +123,24 @@ text-align: left;
     cursor: pointer;
     width: 50%;
     text-align: center;
+    position: relative; /* To allow the line to position relative to each text block */
+    padding-bottom: 10px; /* Adjust as necessary to make space for the line */
 }
 
-#btn-ads.active + #btn-reviews + #top-line {
+.sect__top-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 50%;
+    background-color: #000;
+    transition: transform 0.3s ease;
+}
+
+#btn-ads.active ~ #top-line {
     transform: translateX(0%);
 }
 
-#btn-reviews.active + #top-line {
+#btn-reviews.active ~ #top-line {
     transform: translateX(100%);
 }
