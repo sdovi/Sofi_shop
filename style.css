@@ -12,7 +12,8 @@ footer {
     bottom: 0px;
     background-color: #D9D9D9;
     width: 100%;
-    height: 15%;
+    height: 50px;
+    margin-top: 40px;
 }
 
 .footer__items {
@@ -227,7 +228,4 @@ font-size: 14px;
 font-weight: 700;
 line-height: 16.94px;
 
-}
-.sect__contact{
-    margin-bottom: 60px;
 }
