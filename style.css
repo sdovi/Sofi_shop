@@ -6,8 +6,44 @@
     font-family: "Roboto", sans-serif;
   }
 
+/* Footer */
+footer {
+    position: fixed;    
+    bottom: 0px;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 15%;
+}
 
-  /* navbar */
+.footer__items {
+    margin-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+    
+}
+
+.footer__item {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__item p {
+    margin: 0;
+    font-size: 8px;
+    font-weight: 400;
+    line-height: 9.38px;
+    text-align: center;
+}
+
+/* navbar */
   
 .nav__top{
     display: flex;
@@ -101,6 +137,7 @@ text-align: left;
     text-align: left;
     color: #999999;
     margin: 0px;
+    padding-bottom: 18px;
 
 }
 .sect__top-txt{
@@ -126,6 +163,36 @@ text-align: left;
     position: relative; /* To allow the line to position relative to each text block */
     padding-bottom: 10px; /* Adjust as necessary to make space for the line */
 }
+.sect__card-price-txt h5{
+    font-weight: 700;
+    line-height: 15px;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 4px;
+    
+}
+.sect__reviews-p{
+    text-align: center;
+    padding-top: 50px;
+}
+.sect__card-like svg{
+    width: 18px;
+    height: 15px;
+}
+.sect__card-price{
+    display: flex;
+    justify-content: space-between;
+}
+.sect__card-price svg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sect__card-like {
+    margin-top: auto;
+    padding-right: 3px;
+}
 
 .sect__top-line {
     position: absolute;
@@ -143,4 +210,24 @@ text-align: left;
 
 #btn-reviews.active ~ #top-line {
     transform: translateX(100%);
+}
+
+.sect__contact{
+    width: 100%;
+}
+.sect__contact button{
+    width: 100%;
+    background-color: #6D5DFF;
+height: 40px;
+border-radius: 4px 0px 0px 0px;
+border: none;
+color: white;
+margin-top: 67px;
+font-size: 14px;
+font-weight: 700;
+line-height: 16.94px;
+
+}
+.sect__contact{
+    margin-bottom: 60px;
 }
